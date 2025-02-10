@@ -14,4 +14,12 @@ The ring fit files are available online at [JSOC](http://jsoc.stanford.edu/ajax/
 1) If you have access to a NetDRMS data base (e.g. Stanford or MPS) you can access the files there. Please use this [script](0_ExtractFromNetDRMS.py) 
 2) Otherwise, I have already run the extraction code and provide a tar ball of the files on Dropbox.
 
-## Runnning the codes
+## Running the codes
+I have synthesized the power spectrum codes into 5 scripts, that need to be run in order. Here is a basic description of each script
+|Script Name | Description |
+|---|---|
+| [0_ExtractFromNetDRMS.py](0_ExtractFromNetDRMS.py) | Only run if you have access to a NetDRMS database with the `hmi.rdVfitsc_fd05` data series available. Script will read **all** the available mode fit files, and associated keywords, and store them in a h5py dictionary. A h5py file is generated for each Carrington rotation.|
+|[1_Prepare_HMI_5deg.py](1_Prepare_HMI_5deg.py) | By providing the path to the h5py files, this script will parse and process the relevant flow data as well as the information relevant to the flow patch location (i.e. lat, lon, Rotation). Here is where you can choose which p modes to average (for u<sub>x</sub> and u<sub>y</sub>) and over what $\ell$ range.|
+| [2_BuildFlowMaps_HMI_RDA_5deg.py](2_BuildFlowMaps_HMI_RDA_5deg.py)| |
+| [3_PowerSpect_HMI_RDA_5deg.py](3_PowerSpect_HMI_RDA_5deg.py)| |
+| [4_SpectrumFitting_MCMC.py](4_SpectrumFitting_MCMC.py)| |
