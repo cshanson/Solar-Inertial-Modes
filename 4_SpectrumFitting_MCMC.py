@@ -10,7 +10,7 @@
 from Routines import *
 import numpy as np
 
-mkdir_p("FIGURES/MCMC")
+mkdir_p("FIGURES/MCMC") # Creates folder to store MCMC figures and fits 
 
 #-------------------------------------------------------
 # user Inputs
