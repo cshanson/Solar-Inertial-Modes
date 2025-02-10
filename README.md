@@ -12,7 +12,7 @@ Activate the environment and you should be ready to go.
 The ring fit files are available online at [JSOC](http://jsoc.stanford.edu/ajax/lookdata.html?ds=hmi.rdVfitsc_fd05). However, there are too many to download online. There are two options available
 
 1) If you have access to a NetDRMS data base (e.g. Stanford or MPS) you can access the files there. Please use this [script](0_ExtractFromNetDRMS.py) 
-2) Otherwise, I have already run the extraction code and provide a tar ball of the files on Dropbox.
+2) Otherwise, I have already run the extraction code and store these files at NYUAD archive. These can be transfered (e.g. Globus) upon request.
 
 ## Computational requirements
 These procedures are best used on high performace computing systems. For instance, I use the NYUAD Jubail cluster, often requesting 50Gb in memory and around 27 cores. The codes are parallelized, and can be run on a few cores. However, the memory requirements may prohibit use on personal machines (e.g. laptops).
