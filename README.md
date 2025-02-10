@@ -18,7 +18,7 @@ The ring fit files are available online at [JSOC](http://jsoc.stanford.edu/ajax/
 These procedures are best used on high performace computing systems. For instance, I use the NYUAD Jubail cluster, often requesting 50Gb in memory and around 27 cores. The codes are parallelized, and can be run on a few cores. However, the memory requirements may prohibit use on personal machines (e.g. laptops).
 
 ## Running the codes
-I have synthesized the power spectrum codes into 5 scripts, that need to be run in order. I have provided a jupyter notebook as well. Here is a basic description of each script
+I have synthesized the power spectrum codes into 5 scripts, that need to be run in order. I have provided a [jupyter notebook](Script_Notebook.ipynb) as well. Here is a basic description of each script
 |Script Name | Description |
 |---|---|
 | [0_ExtractFromNetDRMS.py](0_ExtractFromNetDRMS.py) | Only run if you have access to a NetDRMS database with the `hmi.rdVfitsc_fd05` data series available. Script will read **all** the available mode fit files, and associated keywords, and store them in a h5py dictionary. A h5py file is generated for each Carrington rotation.|
