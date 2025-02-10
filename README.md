@@ -7,3 +7,8 @@ I have provided the yml file for the conda environment I use for these codes. It
 `>conda env create -f conda_env_hanson.yml`
 
 Activate the environment and you should be ready to go.
+
+## Getting the data
+The ring fit files are available online at [JSOC](http://jsoc.stanford.edu/ajax/lookdata.html?ds=hmi.rdVfitsc_fd05). However, there are too many to download online. There are two options available
+
+1) If you have access to a NetDRMS data base (e.g. Stanford or MPS) you can access the files there. Please use this [script](0_ExtractFromNetDRMS.py) 
